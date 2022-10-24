@@ -1045,6 +1045,14 @@ body.vertical-menu footer {
   text-align: center;
 }
 
+.site-list {
+  display:flex;
+}
+
+.site-list .site {
+  @include xy-cell(4);
+}
+
 .site-page-pagination {
   @include xy-cell;
 }
