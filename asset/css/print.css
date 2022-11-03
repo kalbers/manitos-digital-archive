@@ -1,0 +1,6 @@
+.top-bar, #responsive-menu {
+  display:none !important;
+}
+.site-title img {
+  width: 200px;
+}

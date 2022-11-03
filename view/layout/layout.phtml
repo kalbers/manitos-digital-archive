@@ -9,6 +9,7 @@ if (isset($stylesheet)) {
     $this->headLink()->prependStylesheet($this->assetUrl("css/$stylesheet.css"));    
 } else {
     $this->headLink()->prependStylesheet($this->assetUrl('css/default.css'));
+    $this->headLink()->appendStylesheet($this->assetUrl('css/print.css'),'print');
 }
 $this->headLink()->prependStylesheet($this->assetUrl('css/iconfonts.css', 'Omeka'));
 $this->headLink()->prependStylesheet('//fonts.googleapis.com/css2?family=Open+Sans&display=swap');

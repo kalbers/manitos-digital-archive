@@ -1047,6 +1047,7 @@ body.vertical-menu footer {
 
 .site-list {
   display:flex;
+  flex-wrap:wrap;
 }
 
 .site-list .site {
