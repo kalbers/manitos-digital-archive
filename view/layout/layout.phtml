@@ -79,6 +79,11 @@ endif;
             </header>
             <div id="content" role="main">
                 <?php echo $this->content; ?>
+                <div class="contact-container">
+                    <?php if ($contactContent = $this->themeSetting('contact')): ?>
+                        <?php echo $contactContent; ?>
+                    <?php endif; ?>
+                </div>
             </div>
             <footer>
                 <div class="logos">

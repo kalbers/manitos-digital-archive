@@ -172,6 +172,7 @@ body.vertical-menu #user-bar ~ #content {
 
 .site-title-container {
   @include xy-grid-container;
+  padding-top:1rem;
 
 .site-title {
   display: flex;
@@ -211,6 +212,10 @@ h1.site-title {
 
 .site-title a {
   display: block;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  content: none;
 }
 
 .dropdown.menu > li.is-dropdown-submenu-parent.active > a:after {
@@ -372,6 +377,11 @@ body.vertical-menu header .desktop {
   @include breakpoint(medium down) {
     display: none;
   }
+}
+
+.contact-container {
+  padding-top:.9rem;
+  font-size:1.2rem;
 }
 
 
